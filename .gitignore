@@ -1,5 +1,6 @@
 # Latch stuff
 *.logs
+*.latch_report.tar.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
