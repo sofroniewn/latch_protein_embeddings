@@ -1,0 +1,1736 @@
+Step 1/8 : FROM 812206152185.dkr.ecr.us-west-2.amazonaws.com/latch-base:dd8f-main
+
+
+ ---> be080c0dc3c9
+
+Step 2/8 : RUN python3 -m pip install --upgrade pyensembl
+
+
+ ---> Running in 2a16b78db10d
+
+Collecting pyensembl
+
+  Downloading pyensembl-2.2.4.tar.gz (58 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.8/58.8 KB 3.9 MB/s eta 0:00:00
+
+
+  Preparing metadata (setup.py): started
+
+  Preparing metadata (setup.py): finished with status 'done'
+
+Collecting typechecks>=0.0.2
+
+  Downloading typechecks-0.1.0.tar.gz (3.4 kB)
+
+  Preparing metadata (setup.py): started
+
+  Preparing metadata (setup.py): finished with status 'done'
+
+Collecting datacache>=1.1.4
+
+  Downloading datacache-1.2.1.tar.gz (18 kB)
+
+  Preparing metadata (setup.py): started
+
+  Preparing metadata (setup.py): finished with status 'done'
+
+Collecting memoized-property>=1.0.2
+
+  Downloading memoized-property-1.0.3.tar.gz (5.0 kB)
+
+  Preparing metadata (setup.py): started
+
+  Preparing metadata (setup.py): finished with status 'done'
+
+Collecting tinytimer
+
+  Downloading tinytimer-0.0.0.tar.gz (2.1 kB)
+
+  Preparing metadata (setup.py): started
+
+  Preparing metadata (setup.py): finished with status 'done'
+
+Collecting gtfparse<2.0.0,>=1.3.0
+
+  Downloading gtfparse-1.3.0.tar.gz (16 kB)
+
+  Preparing metadata (setup.py): started
+
+  Preparing metadata (setup.py): finished with status 'done'
+
+Collecting serializable
+
+  Downloading serializable-0.2.1.tar.gz (8.4 kB)
+
+  Preparing metadata (setup.py): started
+
+  Preparing metadata (setup.py): finished with status 'done'
+
+Collecting nose>=1.3.3
+
+  Downloading nose-1.3.7-py3-none-any.whl (154 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 154.7/154.7 KB 4.6 MB/s eta 0:00:00
+
+
+Collecting pylint>=1.4.4
+
+  Downloading pylint-2.15.10-py3-none-any.whl (509 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 509.9/509.9 KB 11.0 MB/s eta 0:00:00
+
+
+Collecting pandas>=0.15.2
+
+  Downloading pandas-1.5.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 67.2 MB/s eta 0:00:00
+
+
+Collecting appdirs>=1.4.0
+
+  Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+
+Collecting progressbar33>=2.4
+
+  Downloading progressbar33-2.4.tar.gz (10 kB)
+
+  Preparing metadata (setup.py): started
+
+  Preparing metadata (setup.py): finished with status 'done'
+
+Collecting requests>=2.5.1
+
+  Downloading requests-2.28.2-py3-none-any.whl (62 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 KB 4.6 MB/s eta 0:00:00
+
+
+Collecting mock
+
+  Downloading mock-5.0.1-py3-none-any.whl (30 kB)
+
+Collecting numpy>=1.7
+
+  Downloading numpy-1.24.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 60.7 MB/s eta 0:00:00
+
+
+Collecting typing-extensions>=3.10.0
+
+  Downloading typing_extensions-4.4.0-py3-none-any.whl (26 kB)
+
+Collecting dill>=0.2
+
+  Downloading dill-0.3.6-py3-none-any.whl (110 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.5/110.5 KB 17.4 MB/s eta 0:00:00
+
+
+Collecting platformdirs>=2.2.0
+
+  Downloading platformdirs-2.6.2-py3-none-any.whl (14 kB)
+
+Collecting mccabe<0.8,>=0.6
+
+  Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+
+Collecting isort<6,>=4.2.5
+
+  Downloading isort-5.11.4-py3-none-any.whl (104 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 104.1/104.1 KB 8.3 MB/s eta 0:00:00
+
+
+Collecting tomlkit>=0.10.1
+
+  Downloading tomlkit-0.11.6-py3-none-any.whl (35 kB)
+
+Collecting tomli>=1.1.0
+
+  Downloading tomli-2.0.1-py3-none-any.whl (12 kB)
+
+Collecting astroid<=2.14.0-dev0,>=2.12.13
+
+  Downloading astroid-2.13.2-py3-none-any.whl (272 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 272.4/272.4 KB 31.4 MB/s eta 0:00:00
+
+
+Requirement already satisfied: six>=1.9.0 in /usr/local/lib/python3.9/site-packages (from serializable->pyensembl) (1.16.0)
+
+Collecting simplejson
+
+  Downloading simplejson-3.18.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (136 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 136.8/136.8 KB 10.5 MB/s eta 0:00:00
+
+
+Collecting wrapt<2,>=1.11
+
+  Downloading wrapt-1.14.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (77 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.8/77.8 KB 10.1 MB/s eta 0:00:00
+
+
+Collecting lazy-object-proxy>=1.4.0
+
+  Downloading lazy_object_proxy-1.9.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (62 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 KB 10.4 MB/s eta 0:00:00
+
+
+Requirement already satisfied: python-dateutil>=2.8.1 in /usr/local/lib/python3.9/site-packages (from pandas>=0.15.2->datacache>=1.1.4->pyensembl) (2.8.2)
+
+Collecting pytz>=2020.1
+
+  Downloading pytz-2022.7.1-py2.py3-none-any.whl (499 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 499.4/499.4 KB 45.9 MB/s eta 0:00:00
+
+
+Collecting idna<4,>=2.5
+
+  Downloading idna-3.4-py3-none-any.whl (61 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 KB 5.1 MB/s eta 0:00:00
+
+
+Collecting certifi>=2017.4.17
+
+  Downloading certifi-2022.12.7-py3-none-any.whl (155 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.3/155.3 KB 25.4 MB/s eta 0:00:00
+
+
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.9/site-packages (from requests>=2.5.1->datacache>=1.1.4->pyensembl) (1.26.12)
+
+Collecting charset-normalizer<4,>=2
+
+  Downloading charset_normalizer-3.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (198 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 198.8/198.8 KB 28.8 MB/s eta 0:00:00
+
+
+Building wheels for collected packages: pyensembl, datacache, gtfparse, memoized-property, typechecks, serializable, tinytimer, progressbar33
+
+  Building wheel for pyensembl (setup.py): started
+
+  Building wheel for pyensembl (setup.py): finished with status 'done'
+  Created wheel for pyensembl: filename=pyensembl-2.2.4-py3-none-any.whl size=54501 sha256=9d6fa015e23c1123a951950b06eb13eeb534e0ca9231403de14534529402c3a3
+  Stored in directory: /root/.cache/pip/wheels/5a/f6/19/2e5568c6558e71a82726d7e494aad9a22232e51cd552043059
+  Building wheel for datacache (setup.py): started
+
+  Building wheel for datacache (setup.py): finished with status 'done'
+
+  Created wheel for datacache: filename=datacache-1.2.1-py3-none-any.whl size=20235 sha256=78c15df5e95013e78ce0c6150e633147c75c69cdf9adb6efca61435c2e628fe7
+
+  Stored in directory: /root/.cache/pip/wheels/32/39/f7/f402fa46d8ea2bb90cafb96143b78f2ef1de9ea6d35e358b12
+
+  Building wheel for gtfparse (setup.py): started
+
+  Building wheel for gtfparse (setup.py): finished with status 'done'
+
+  Created wheel for gtfparse: filename=gtfparse-1.3.0-py3-none-any.whl size=15752 sha256=33f8bee06ad52e456b06119c84f50b34b76611e779c4a41050b7f9a90d610977
+
+  Stored in directory: /root/.cache/pip/wheels/3c/b9/f0/417336d7e6bef858bf5b73229b51506db1cfd423e2d2149abe
+
+  Building wheel for memoized-property (setup.py): started
+
+  Building wheel for memoized-property (setup.py): finished with status 'done'
+
+  Created wheel for memoized-property: filename=memoized_property-1.0.3-py2.py3-none-any.whl size=4198 sha256=4e81dc2c6a5926b1188b8b729d95a285077c98e1b09e58b4f5563f4af551bc81
+
+  Stored in directory: /root/.cache/pip/wheels/4b/4b/43/241adc2eda27737fcf060c847d2b0fecf4dafdf0d544463ab2
+
+  Building wheel for typechecks (setup.py): started
+
+  Building wheel for typechecks (setup.py): finished with status 'done'
+
+  Created wheel for typechecks: filename=typechecks-0.1.0-py3-none-any.whl size=2770 sha256=e926ae5547cd0509266bf61e4c765093d020acd468a5fe539c65fc57a93f8802
+
+  Stored in directory: /root/.cache/pip/wheels/39/7c/7c/a6bc8d978b49455ddef1864abdcf80988a52562a13d3e9379f
+
+  Building wheel for serializable (setup.py): started
+
+  Building wheel for serializable (setup.py): finished with status 'done'
+
+  Created wheel for serializable: filename=serializable-0.2.1-py3-none-any.whl size=8959 sha256=67cdbdce8a64792fae358924f5071936123350f36f3f10ca31de147a2835501d
+
+  Stored in directory: /root/.cache/pip/wheels/56/5e/85/f4619ffeb85a9979233e6a37de240aa8378e271c3f60375eab
+
+  Building wheel for tinytimer (setup.py): started
+
+  Building wheel for tinytimer (setup.py): finished with status 'done'
+
+  Created wheel for tinytimer: filename=tinytimer-0.0.0-py3-none-any.whl size=1891 sha256=18d2593564d5a1e795b7718546c7b3387a6adc15b24bbc5ac4fbcbd2fca28d6f
+
+  Stored in directory: /root/.cache/pip/wheels/94/69/be/0f2a296734b4cc5f55168ec5039eb08d6c3c463f5dc4399e40
+
+  Building wheel for progressbar33 (setup.py): started
+
+  Building wheel for progressbar33 (setup.py): finished with status 'done'
+
+  Created wheel for progressbar33: filename=progressbar33-2.4-py3-none-any.whl size=12156 sha256=8c6900bcda5525f1bb558f381a1b37891c0581a7f320dec57d9ab1252b97b91d
+
+  Stored in directory: /root/.cache/pip/wheels/b1/84/d4/f9af63e5362a7a4d5b9aada124c81642569fbd53c6e5220a3d
+
+Successfully built pyensembl datacache gtfparse memoized-property typechecks serializable tinytimer progressbar33
+
+Installing collected packages: typechecks, tinytimer, pytz, progressbar33, nose, memoized-property, charset-normalizer, appdirs, wrapt, typing-extensions, tomlkit, tomli, simplejson, platformdirs, numpy, mock, mccabe, lazy-object-proxy, isort, idna, dill, certifi, serializable, requests, pandas, astroid, pylint, gtfparse, datacache, pyensembl
+
+Successfully installed appdirs-1.4.4 astroid-2.13.2 certifi-2022.12.7 charset-normalizer-3.0.1 datacache-1.2.1 dill-0.3.6 gtfparse-1.3.0 idna-3.4 isort-5.11.4 lazy-object-proxy-1.9.0 mccabe-0.7.0 memoized-property-1.0.3 mock-5.0.1 nose-1.3.7 numpy-1.24.1 pandas-1.5.2 platformdirs-2.6.2 progressbar33-2.4 pyensembl-2.2.4 pylint-2.15.10 pytz-2022.7.1 requests-2.28.2 serializable-0.2.1 simplejson-3.18.1 tinytimer-0.0.0 tomli-2.0.1 tomlkit-0.11.6 typechecks-0.1.0 typing-extensions-4.4.0 wrapt-1.14.1
+
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[0m
+[91mWARNING: You are using pip version 22.0.4; however, version 22.3.1 is available.
+You should consider upgrading via the '/usr/local/bin/python3 -m pip install --upgrade pip' command.
+[0m
+ ---> 96ac40b5ae62
+
+Step 3/8 : RUN pyensembl install --release 77 --species human
+
+
+ ---> Running in 91c4fc34c5df
+
+2023-01-18 00:25:00,850 - pyensembl.shell - INFO - Running 'install' for EnsemblRelease(release=77, species='homo_sapiens')
+2023-01-18 00:25:00,850 - pyensembl.download_cache - INFO - Fetching /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.77.gtf.gz from URL https://ftp.ensembl.org/pub/release-77/gtf/homo_sapiens/Homo_sapiens.GRCh38.77.gtf.gz
+
+2023-01-18 00:25:00,860 - datacache.download - INFO - Downloading https://ftp.ensembl.org/pub/release-77/gtf/homo_sapiens/Homo_sapiens.GRCh38.77.gtf.gz to /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.77.gtf.gz
+
+2023-01-18 00:26:41,218 - pyensembl.download_cache - INFO - Fetching /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.cdna.all.fa.gz from URL https://ftp.ensembl.org/pub/release-77/fasta/homo_sapiens/cdna/Homo_sapiens.GRCh38.cdna.all.fa.gz
+2023-01-18 00:26:41,220 - datacache.download - INFO - Downloading https://ftp.ensembl.org/pub/release-77/fasta/homo_sapiens/cdna/Homo_sapiens.GRCh38.cdna.all.fa.gz to /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.cdna.all.fa.gz
+
+2023-01-18 00:29:05,838 - pyensembl.download_cache - INFO - Fetching /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.ncrna.fa.gz from URL https://ftp.ensembl.org/pub/release-77/fasta/homo_sapiens/ncrna/Homo_sapiens.GRCh38.ncrna.fa.gz
+
+2023-01-18 00:29:05,840 - datacache.download - INFO - Downloading https://ftp.ensembl.org/pub/release-77/fasta/homo_sapiens/ncrna/Homo_sapiens.GRCh38.ncrna.fa.gz to /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.ncrna.fa.gz
+
+2023-01-18 00:29:27,123 - pyensembl.download_cache - INFO - Fetching /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.pep.all.fa.gz from URL https://ftp.ensembl.org/pub/release-77/fasta/homo_sapiens/pep/Homo_sapiens.GRCh38.pep.all.fa.gz
+
+2023-01-18 00:29:27,124 - datacache.download - INFO - Downloading https://ftp.ensembl.org/pub/release-77/fasta/homo_sapiens/pep/Homo_sapiens.GRCh38.pep.all.fa.gz to /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.pep.all.fa.gz
+
+2023-01-18 00:29:58,292 - pyensembl.database - INFO - Creating database: /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.77.gtf.db
+
+2023-01-18 00:29:58,293 - pyensembl.database - INFO - Reading GTF from /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.77.gtf.gz
+
+2023-01-18 00:31:48,756 - datacache.database_helpers - INFO - Creating database /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.77.gtf.db containing: CDS, transcript, stop_codon, gene, start_codon, exon
+
+2023-01-18 00:31:48,756 - datacache.database - INFO - Running sqlite query: "CREATE TABLE CDS (transcript_version TEXT NOT NULL, transcript_biotype TEXT NOT NULL, transcript_name TEXT NOT NULL, source TEXT NOT NULL, gene_id TEXT NOT NULL, protein_version TEXT NOT NULL, ccds_id TEXT NOT NULL, exon_id TEXT NOT NULL, gene_version TEXT NOT NULL, end INT NOT NULL, exon_version TEXT NOT NULL, start INT NOT NULL, gene_biotype TEXT NOT NULL, exon_number TEXT NOT NULL, seqname TEXT NOT NULL, gene_name TEXT NOT NULL, feature TEXT NOT NULL, strand TEXT NOT NULL, protein_id TEXT NOT NULL, transcript_id TEXT NOT NULL)"
+
+2023-01-18 00:31:51,596 - datacache.database - INFO - Inserting 742865 rows into table CDS
+
+2023-01-18 00:31:56,780 - datacache.database - INFO - Creating index on CDS (seqname, start, end)
+
+2023-01-18 00:31:57,873 - datacache.database - INFO - Creating index on CDS (gene_name)
+
+2023-01-18 00:31:58,558 - datacache.database - INFO - Creating index on CDS (gene_id)
+
+2023-01-18 00:31:59,256 - datacache.database - INFO - Creating index on CDS (transcript_id)
+
+2023-01-18 00:31:59,907 - datacache.database - INFO - Creating index on CDS (transcript_name)
+
+2023-01-18 00:32:00,473 - datacache.database - INFO - Creating index on CDS (exon_id)
+
+2023-01-18 00:32:00,951 - datacache.database - INFO - Creating index on CDS (protein_id)
+
+2023-01-18 00:32:01,620 - datacache.database - INFO - Creating index on CDS (ccds_id)
+
+2023-01-18 00:32:02,137 - datacache.database - INFO - Running sqlite query: "CREATE TABLE transcript (transcript_version TEXT NOT NULL, transcript_biotype TEXT NOT NULL, transcript_name TEXT NOT NULL, source TEXT NOT NULL, gene_id TEXT NOT NULL, protein_version TEXT NOT NULL, ccds_id TEXT NOT NULL, exon_id TEXT NOT NULL, gene_version TEXT NOT NULL, end INT NOT NULL, exon_version TEXT NOT NULL, start INT NOT NULL, gene_biotype TEXT NOT NULL, exon_number TEXT NOT NULL, seqname TEXT NOT NULL, gene_name TEXT NOT NULL, feature TEXT NOT NULL, strand TEXT NOT NULL, protein_id TEXT NOT NULL, transcript_id TEXT UNIQUE PRIMARY KEY NOT NULL)"
+
+2023-01-18 00:32:02,976 - datacache.database - INFO - Inserting 208244 rows into table transcript
+
+2023-01-18 00:32:05,125 - datacache.database - INFO - Creating index on transcript (seqname, start, end)
+
+2023-01-18 00:32:05,327 - datacache.database - INFO - Creating index on transcript (gene_name)
+
+2023-01-18 00:32:05,516 - datacache.database - INFO - Creating index on transcript (gene_id)
+
+2023-01-18 00:32:05,727 - datacache.database - INFO - Creating index on transcript (transcript_name)
+
+2023-01-18 00:32:05,917 - datacache.database - INFO - Creating index on transcript (exon_id)
+
+2023-01-18 00:32:06,052 - datacache.database - INFO - Creating index on transcript (protein_id)
+
+2023-01-18 00:32:06,192 - datacache.database - INFO - Creating index on transcript (ccds_id)
+
+2023-01-18 00:32:06,355 - datacache.database - INFO - Running sqlite query: "CREATE TABLE stop_codon (transcript_version TEXT NOT NULL, transcript_biotype TEXT NOT NULL, transcript_name TEXT NOT NULL, source TEXT NOT NULL, gene_id TEXT NOT NULL, protein_version TEXT NOT NULL, ccds_id TEXT NOT NULL, exon_id TEXT NOT NULL, gene_version TEXT NOT NULL, end INT NOT NULL, exon_version TEXT NOT NULL, start INT NOT NULL, gene_biotype TEXT NOT NULL, exon_number TEXT NOT NULL, seqname TEXT NOT NULL, gene_name TEXT NOT NULL, feature TEXT NOT NULL, strand TEXT NOT NULL, protein_id TEXT NOT NULL, transcript_id TEXT NOT NULL)"
+
+2023-01-18 00:32:06,635 - datacache.database - INFO - Inserting 69189 rows into table stop_codon
+
+2023-01-18 00:32:07,153 - datacache.database - INFO - Creating index on stop_codon (seqname, start, end)
+
+2023-01-18 00:32:07,224 - datacache.database - INFO - Creating index on stop_codon (gene_name)
+
+2023-01-18 00:32:07,284 - datacache.database - INFO - Creating index on stop_codon (gene_id)
+
+2023-01-18 00:32:07,347 - datacache.database - INFO - Creating index on stop_codon (transcript_id)
+
+2023-01-18 00:32:07,417 - datacache.database - INFO - Creating index on stop_codon (transcript_name)
+
+2023-01-18 00:32:07,478 - datacache.database - INFO - Creating index on stop_codon (exon_id)
+
+2023-01-18 00:32:07,516 - datacache.database - INFO - Creating index on stop_codon (protein_id)
+
+2023-01-18 00:32:07,556 - datacache.database - INFO - Creating index on stop_codon (ccds_id)
+
+2023-01-18 00:32:07,605 - datacache.database - INFO - Running sqlite query: "CREATE TABLE gene (transcript_version TEXT NOT NULL, transcript_biotype TEXT NOT NULL, transcript_name TEXT NOT NULL, source TEXT NOT NULL, gene_id TEXT UNIQUE PRIMARY KEY NOT NULL, protein_version TEXT NOT NULL, ccds_id TEXT NOT NULL, exon_id TEXT NOT NULL, gene_version TEXT NOT NULL, end INT NOT NULL, exon_version TEXT NOT NULL, start INT NOT NULL, gene_biotype TEXT NOT NULL, exon_number TEXT NOT NULL, seqname TEXT NOT NULL, gene_name TEXT NOT NULL, feature TEXT NOT NULL, strand TEXT NOT NULL, protein_id TEXT NOT NULL, transcript_id TEXT NOT NULL)"
+
+2023-01-18 00:32:07,850 - datacache.database - INFO - Inserting 64253 rows into table gene
+
+2023-01-18 00:32:08,455 - datacache.database - INFO - Creating index on gene (seqname, start, end)
+
+2023-01-18 00:32:08,513 - datacache.database - INFO - Creating index on gene (gene_name)
+
+2023-01-18 00:32:08,574 - datacache.database - INFO - Creating index on gene (transcript_id)
+
+2023-01-18 00:32:08,608 - datacache.database - INFO - Creating index on gene (transcript_name)
+
+2023-01-18 00:32:08,640 - datacache.database - INFO - Creating index on gene (exon_id)
+
+2023-01-18 00:32:08,672 - datacache.database - INFO - Creating index on gene (protein_id)
+
+2023-01-18 00:32:08,707 - datacache.database - INFO - Creating index on gene (ccds_id)
+
+2023-01-18 00:32:08,739 - datacache.database - INFO - Running sqlite query: "CREATE TABLE start_codon (transcript_version TEXT NOT NULL, transcript_biotype TEXT NOT NULL, transcript_name TEXT NOT NULL, source TEXT NOT NULL, gene_id TEXT NOT NULL, protein_version TEXT NOT NULL, ccds_id TEXT NOT NULL, exon_id TEXT NOT NULL, gene_version TEXT NOT NULL, end INT NOT NULL, exon_version TEXT NOT NULL, start INT NOT NULL, gene_biotype TEXT NOT NULL, exon_number TEXT NOT NULL, seqname TEXT NOT NULL, gene_name TEXT NOT NULL, feature TEXT NOT NULL, strand TEXT NOT NULL, protein_id TEXT NOT NULL, transcript_id TEXT NOT NULL)"
+
+2023-01-18 00:32:09,015 - datacache.database - INFO - Inserting 69070 rows into table start_codon
+
+2023-01-18 00:32:09,530 - datacache.database - INFO - Creating index on start_codon (seqname, start, end)
+
+2023-01-18 00:32:09,596 - datacache.database - INFO - Creating index on start_codon (gene_name)
+
+2023-01-18 00:32:09,661 - datacache.database - INFO - Creating index on start_codon (gene_id)
+
+2023-01-18 00:32:09,731 - datacache.database - INFO - Creating index on start_codon (transcript_id)
+
+2023-01-18 00:32:09,801 - datacache.database - INFO - Creating index on start_codon (transcript_name)
+
+2023-01-18 00:32:09,861 - datacache.database - INFO - Creating index on start_codon (exon_id)
+
+2023-01-18 00:32:09,899 - datacache.database - INFO - Creating index on start_codon (protein_id)
+
+2023-01-18 00:32:09,939 - datacache.database - INFO - Creating index on start_codon (ccds_id)
+
+2023-01-18 00:32:09,987 - datacache.database - INFO - Running sqlite query: "CREATE TABLE exon (transcript_version TEXT NOT NULL, transcript_biotype TEXT NOT NULL, transcript_name TEXT NOT NULL, source TEXT NOT NULL, gene_id TEXT NOT NULL, protein_version TEXT NOT NULL, ccds_id TEXT NOT NULL, exon_id TEXT NOT NULL, gene_version TEXT NOT NULL, end INT NOT NULL, exon_version TEXT NOT NULL, start INT NOT NULL, gene_biotype TEXT NOT NULL, exon_number TEXT NOT NULL, seqname TEXT NOT NULL, gene_name TEXT NOT NULL, feature TEXT NOT NULL, strand TEXT NOT NULL, protein_id TEXT NOT NULL, transcript_id TEXT NOT NULL)"
+
+2023-01-18 00:32:14,702 - datacache.database - INFO - Inserting 1232660 rows into table exon
+
+2023-01-18 00:32:23,702 - datacache.database - INFO - Creating index on exon (seqname, start, end)
+
+2023-01-18 00:32:25,774 - datacache.database - INFO - Creating index on exon (gene_name)
+
+2023-01-18 00:32:27,267 - datacache.database - INFO - Creating index on exon (gene_id)
+
+2023-01-18 00:32:28,598 - datacache.database - INFO - Creating index on exon (transcript_id)
+
+2023-01-18 00:32:29,994 - datacache.database - INFO - Creating index on exon (transcript_name)
+
+2023-01-18 00:32:31,243 - datacache.database - INFO - Creating index on exon (exon_id)
+
+2023-01-18 00:32:32,708 - datacache.database - INFO - Creating index on exon (protein_id)
+
+2023-01-18 00:32:33,579 - datacache.database - INFO - Creating index on exon (ccds_id)
+
+2023-01-18 00:32:34,709 - datacache.database - INFO - Running sqlite query: "CREATE TABLE _datacache_metadata (version INT)"
+
+2023-01-18 00:32:34,712 - datacache.database - INFO - Running sqlite query: "INSERT INTO _datacache_metadata VALUES (3)"
+
+2023-01-18 00:32:35,446 - pyensembl.sequence_data - INFO - Parsing sequences from FASTA file at /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.cdna.all.fa.gz
+
+2023-01-18 00:32:45,797 - pyensembl.sequence_data - INFO - Saving sequence dictionary to /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.cdna.all.fa.gz.pickle
+
+2023-01-18 00:32:46,467 - pyensembl.sequence_data - INFO - Parsing sequences from FASTA file at /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.ncrna.fa.gz
+
+2023-01-18 00:32:47,701 - pyensembl.sequence_data - INFO - Saving sequence dictionary to /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.ncrna.fa.gz.pickle
+
+2023-01-18 00:32:47,765 - pyensembl.sequence_data - INFO - Parsing sequences from FASTA file at /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.pep.all.fa.gz
+
+2023-01-18 00:32:49,790 - pyensembl.sequence_data - INFO - Saving sequence dictionary to /root/.cache/pyensembl/GRCh38/ensembl77/Homo_sapiens.GRCh38.pep.all.fa.gz.pickle
+
+ ---> 249c14f57018
+
+Step 4/8 : RUN python3 -m pip install --upgrade latch
+
+
+ ---> Running in 35026ce5862f
+
+Collecting latch
+
+  Downloading latch-2.10.0-py3-none-any.whl (105 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 105.8/105.8 KB 6.0 MB/s eta 0:00:00
+
+
+Collecting kubernetes>=24.2.0
+
+  Downloading kubernetes-25.3.0-py2.py3-none-any.whl (1.4 MB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 33.7 MB/s eta 0:00:00
+
+
+Collecting paramiko>=2.11.0
+
+  Downloading paramiko-2.12.0-py2.py3-none-any.whl (213 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 213.1/213.1 KB 16.6 MB/s eta 0:00:00
+
+
+Requirement already satisfied: boto3>=1.24.22 in /usr/local/lib/python3.9/site-packages (from latch) (1.24.69)
+
+Collecting aioconsole==0.5.1
+
+  Downloading aioconsole-0.5.1-py3-none-any.whl (30 kB)
+
+Collecting apscheduler==3.9.1
+
+  Downloading APScheduler-3.9.1-py2.py3-none-any.whl (59 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.5/59.5 KB 4.1 MB/s eta 0:00:00
+
+
+Requirement already satisfied: requests>=2.28.1 in /usr/local/lib/python3.9/site-packages (from latch) (2.28.2)
+
+Collecting lytekit==0.14.8
+
+  Downloading lytekit-0.14.8-py3-none-any.whl (391 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 391.6/391.6 KB 27.4 MB/s eta 0:00:00
+
+
+Collecting scp>=0.14.0
+
+  Downloading scp-0.14.4-py2.py3-none-any.whl (8.6 kB)
+
+Collecting websockets==10.3
+
+  Downloading websockets-10.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (111 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.3/111.3 KB 7.5 MB/s eta 0:00:00
+
+Collecting asyncssh==2.12.0
+
+  Downloading asyncssh-2.12.0-py3-none-any.whl (346 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 346.7/346.7 KB 36.8 MB/s eta 0:00:00
+
+
+Collecting tqdm>=4.63.0
+
+  Downloading tqdm-4.64.1-py2.py3-none-any.whl (78 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.5/78.5 KB 12.4 MB/s eta 0:00:00
+
+
+Collecting prompt-toolkit==3.0.33
+
+  Downloading prompt_toolkit-3.0.33-py3-none-any.whl (383 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 383.6/383.6 KB 40.2 MB/s eta 0:00:00
+
+
+Collecting typing-extensions==4.3.0
+
+  Downloading typing_extensions-4.3.0-py3-none-any.whl (25 kB)
+
+Collecting click>=8.0
+
+  Downloading click-8.1.3-py3-none-any.whl (96 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.6/96.6 KB 10.7 MB/s eta 0:00:00
+
+
+Collecting docker>=5.0
+
+  Downloading docker-6.0.1-py3-none-any.whl (147 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 147.5/147.5 KB 13.9 MB/s eta 0:00:00
+
+
+Collecting lytekitplugins-pods==0.4.0
+
+  Downloading lytekitplugins_pods-0.4.0-py3-none-any.whl (4.3 kB)
+
+Collecting awscli==1.25.22
+
+  Downloading awscli-1.25.22-py3-none-any.whl (3.9 MB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.9/3.9 MB 56.3 MB/s eta 0:00:00
+
+
+Collecting uvloop==0.17.0
+
+  Downloading uvloop-0.17.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.2 MB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 66.3 MB/s eta 0:00:00
+
+
+Collecting pyjwt>=0.2.0
+
+  Downloading PyJWT-2.6.0-py3-none-any.whl (20 kB)
+
+Collecting tzlocal!=3.*,>=2.0
+
+  Downloading tzlocal-4.2-py3-none-any.whl (19 kB)
+
+Requirement already satisfied: six>=1.4.0 in /usr/local/lib/python3.9/site-packages (from apscheduler==3.9.1->latch) (1.16.0)
+
+Requirement already satisfied: setuptools>=0.7 in /usr/local/lib/python3.9/site-packages (from apscheduler==3.9.1->latch) (58.1.0)
+
+Requirement already satisfied: pytz in /usr/local/lib/python3.9/site-packages (from apscheduler==3.9.1->latch) (2022.7.1)
+
+Collecting cryptography>=3.1
+
+  Downloading cryptography-39.0.0-cp36-abi3-manylinux_2_28_x86_64.whl (4.2 MB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 63.1 MB/s eta 0:00:00
+
+
+Requirement already satisfied: colorama<0.4.5,>=0.2.5 in /usr/local/lib/python3.9/site-packages (from awscli==1.25.22->latch) (0.4.4)
+
+Requirement already satisfied: rsa<4.8,>=3.1.2 in /usr/local/lib/python3.9/site-packages (from awscli==1.25.22->latch) (4.7.2)
+
+Requirement already satisfied: docutils<0.17,>=0.10 in /usr/local/lib/python3.9/site-packages (from awscli==1.25.22->latch) (0.16)
+
+Requirement already satisfied: PyYAML<5.5,>=3.10 in /usr/local/lib/python3.9/site-packages (from awscli==1.25.22->latch) (5.4.1)
+
+Collecting botocore==1.27.22
+
+  Downloading botocore-1.27.22-py3-none-any.whl (8.9 MB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.9/8.9 MB 66.5 MB/s eta 0:00:00
+
+
+Requirement already satisfied: s3transfer<0.7.0,>=0.6.0 in /usr/local/lib/python3.9/site-packages (from awscli==1.25.22->latch) (0.6.0)
+
+Collecting protobuf<4,>=3.6.1
+
+  Downloading protobuf-3.20.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.0 MB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 67.9 MB/s eta 0:00:00
+
+
+Collecting responses>=0.10.7
+
+  Downloading responses-0.22.0-py3-none-any.whl (51 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.1/51.1 KB 8.0 MB/s eta 0:00:00
+
+
+Collecting pyarrow<7.0.0,>=4.0.0
+
+  Downloading pyarrow-6.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25.6 MB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 25.6/25.6 MB 46.2 MB/s eta 0:00:00
+
+
+Collecting statsd<4.0.0,>=3.0.0
+
+  Downloading statsd-3.3.0-py2.py3-none-any.whl (11 kB)
+
+Requirement already satisfied: wrapt<2.0.0,>=1.0.0 in /usr/local/lib/python3.9/site-packages (from lytekit==0.14.8->latch) (1.14.1)
+
+Collecting deprecated<2.0,>=1.0
+
+  Downloading Deprecated-1.2.13-py2.py3-none-any.whl (9.6 kB)
+
+Collecting python-json-logger>=2.0.0
+
+  Downloading python_json_logger-2.0.4-py3-none-any.whl (7.8 kB)
+
+Collecting sortedcontainers<3.0.0,>=1.5.9
+
+  Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+
+Collecting docker-image-py>=0.1.10
+
+  Downloading docker-image-py-0.1.12.tar.gz (8.2 kB)
+
+  Preparing metadata (setup.py): started
+
+  Preparing metadata (setup.py): finished with status 'done'
+
+Collecting pytimeparse<2.0.0,>=1.1.8
+
+  Downloading pytimeparse-1.1.8-py2.py3-none-any.whl (10.0 kB)
+
+Collecting jsonschema>=4.5.1
+
+  Downloading jsonschema-4.17.3-py3-none-any.whl (90 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.4/90.4 KB 6.7 MB/s eta 0:00:00
+
+
+Requirement already satisfied: python-dateutil>=2.1 in /usr/local/lib/python3.9/site-packages (from lytekit==0.14.8->latch) (2.8.2)
+
+Collecting grpcio!=1.45.0,<2.0,>=1.43.0
+
+  Downloading grpcio-1.51.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.8 MB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 63.0 MB/s eta 0:00:00
+
+
+Collecting docstring-parser>=0.9.0
+
+  Downloading docstring_parser-0.15-py3-none-any.whl (36 kB)
+
+Collecting docker>=5.0
+
+  Downloading docker-5.0.3-py2.py3-none-any.whl (146 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 146.2/146.2 KB 17.8 MB/s eta 0:00:00
+
+
+Requirement already satisfied: urllib3<2.0.0,>=1.22 in /usr/local/lib/python3.9/site-packages (from lytekit==0.14.8->latch) (1.26.12)
+
+Collecting marshmallow-jsonschema>=0.12.0
+
+  Downloading marshmallow_jsonschema-0.13.0-py3-none-any.whl (11 kB)
+
+Requirement already satisfied: pandas<2.0.0,>=1.0.0 in /usr/local/lib/python3.9/site-packages (from lytekit==0.14.8->latch) (1.5.2)
+
+Collecting cookiecutter>=1.7.3
+
+  Downloading cookiecutter-2.1.1-py2.py3-none-any.whl (36 kB)
+
+Collecting retry==0.9.2
+
+  Downloading retry-0.9.2-py2.py3-none-any.whl (8.0 kB)
+
+Collecting croniter<4.0.0,>=0.3.20
+
+  Downloading croniter-1.3.8-py2.py3-none-any.whl (18 kB)
+
+Collecting dataclasses-json>=0.5.2
+
+  Downloading dataclasses_json-0.5.7-py3-none-any.whl (25 kB)
+
+Collecting natsort>=7.0.1
+
+  Downloading natsort-8.2.0-py3-none-any.whl (37 kB)
+
+Collecting keyring>=18.0.1
+
+  Downloading keyring-23.13.1-py3-none-any.whl (37 kB)
+
+Collecting grpcio-status!=1.45.0,>=1.43
+
+  Downloading grpcio_status-1.51.1-py3-none-any.whl (5.1 kB)
+
+Collecting lyteidl==0.2.0a0
+
+  Downloading lyteidl-0.2.0a0-py3-none-any.whl (162 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.2/162.2 KB 17.8 MB/s eta 0:00:00
+
+
+Collecting numpy<1.22.0
+
+  Downloading numpy-1.21.6-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (15.7 MB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 64.8 MB/s eta 0:00:00
+
+
+Collecting diskcache>=5.2.1
+
+  Downloading diskcache-5.4.0-py3-none-any.whl (44 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.0/45.0 KB 2.9 MB/s eta 0:00:00
+
+
+Collecting cloudpickle>=2.0.0
+
+  Downloading cloudpickle-2.2.0-py3-none-any.whl (25 kB)
+
+Requirement already satisfied: wheel<1.0.0,>=0.30.0 in /usr/local/lib/python3.9/site-packages (from lytekit==0.14.8->latch) (0.37.1)
+
+Collecting wcwidth
+
+  Downloading wcwidth-0.2.6-py2.py3-none-any.whl (29 kB)
+
+Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /usr/local/lib/python3.9/site-packages (from botocore==1.27.22->awscli==1.25.22->latch) (1.0.1)
+
+Collecting protoc-gen-swagger
+
+  Downloading protoc_gen_swagger-0.1.0-py2.py3-none-any.whl (9.4 kB)
+
+Collecting googleapis-common-protos
+
+  Downloading googleapis_common_protos-1.58.0-py2.py3-none-any.whl (223 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 223.0/223.0 KB 26.2 MB/s eta 0:00:00
+
+
+Collecting py<2.0.0,>=1.4.26
+
+  Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.7/98.7 KB 15.9 MB/s eta 0:00:00
+
+
+Collecting decorator>=3.4.2
+
+  Downloading decorator-5.1.1-py3-none-any.whl (9.1 kB)
+
+Collecting boto3>=1.24.22
+
+  Downloading boto3-1.26.51-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 15.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.50-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 11.8 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.49-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 20.9 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.48-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 21.2 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.47-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 19.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.46-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 19.3 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.45-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 10.8 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.44-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 21.6 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.43-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 21.2 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.42-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 20.6 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.41-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 10.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.40-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 15.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.39-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 20.6 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.38-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 20.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.37-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 17.8 MB/s eta 0:00:00
+
+  Downloading boto3-1.26.36-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 12.8 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.35-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 10.1 MB/s eta 0:00:00
+
+  Downloading boto3-1.26.34-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 12.2 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.33-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 20.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.32-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.7/132.7 KB 11.7 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.31-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 19.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.30-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 20.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.29-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 20.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.28-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 19.8 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.27-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 20.9 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.26-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 20.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.25-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 21.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.24-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 18.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.23-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 19.7 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.22-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 20.6 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.21-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 20.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.20-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 19.3 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.19-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 20.8 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.18-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 15.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.17-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 KB 21.4 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.16-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.9 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.15-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 15.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.14-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.5 MB/s eta 0:00:00
+
+  Downloading boto3-1.26.13-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 12.4 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.12-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 12.8 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.11-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.10-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 15.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.9-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 18.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.8-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.7-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.4 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.6-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 18.2 MB/s eta 0:00:00
+
+  Downloading boto3-1.26.5-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 9.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.4-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 14.2 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.3-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 21.2 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.2-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 21.2 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.1-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 4.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.26.0-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 16.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.25.5-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.9 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.25.4-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 10.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.25.3-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 10.3 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.25.2-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 22.2 MB/s eta 0:00:00
+
+  Downloading boto3-1.25.1-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 4.2 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.25.0-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 11.2 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.96-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 21.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.95-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.94-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 21.7 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.93-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 6.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.92-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 10.0 MB/s eta 0:00:00
+
+  Downloading boto3-1.24.91-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 21.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.90-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.8 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.89-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.88-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 5.4 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.87-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.86-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 21.9 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.85-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.84-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.83-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 22.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.82-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 4.3 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.81-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.3 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.80-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.79-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.9 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.78-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.6 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.77-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.3 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.76-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 15.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.75-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 10.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.74-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.73-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 22.2 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.72-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 21.2 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.71-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 21.3 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.70-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.3 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.68-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 22.4 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.67-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 10.1 MB/s eta 0:00:00
+
+  Downloading boto3-1.24.66-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.9 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.65-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.64-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.7 MB/s eta 0:00:00
+
+  Downloading boto3-1.24.63-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.2 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.62-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 22.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.61-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.60-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 22.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.59-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 14.8 MB/s eta 0:00:00
+
+  Downloading boto3-1.24.58-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 21.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.57-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 10.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.56-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.55-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.6 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.54-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.7 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.53-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.9 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.52-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 12.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.51-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.8 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.50-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 12.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.49-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 10.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.48-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.4 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.47-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.46-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 12.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.45-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 10.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.44-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 15.1 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.43-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.42-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.2 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.41-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 10.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.40-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 15.8 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.39-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.9 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.38-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 6.6 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.37-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 10.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.36-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.3 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.35-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.5 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.34-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.3 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.33-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 18.6 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.32-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 20.2 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.31-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 19.7 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.30-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 11.8 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.29-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 13.0 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.28-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 10.8 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.27-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 16.1 MB/s eta 0:00:00
+
+  Downloading boto3-1.24.26-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 17.3 MB/s eta 0:00:00
+
+  Downloading boto3-1.24.25-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 16.7 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.24-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 18.0 MB/s eta 0:00:00
+
+  Downloading boto3-1.24.23-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 10.4 MB/s eta 0:00:00
+
+
+  Downloading boto3-1.24.22-py3-none-any.whl (132 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.5/132.5 KB 16.1 MB/s eta 0:00:00
+
+Collecting websocket-client>=0.32.0
+
+  Downloading websocket_client-1.4.2-py3-none-any.whl (55 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.3/55.3 KB 9.5 MB/s eta 0:00:00
+
+
+Collecting google-auth>=1.0.1
+
+  Downloading google_auth-2.16.0-py2.py3-none-any.whl (177 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 177.8/177.8 KB 16.9 MB/s eta 0:00:00
+
+
+Requirement already satisfied: certifi>=14.05.14 in /usr/local/lib/python3.9/site-packages (from kubernetes>=24.2.0->latch) (2022.12.7)
+
+Collecting requests-oauthlib
+
+  Downloading requests_oauthlib-1.3.1-py2.py3-none-any.whl (23 kB)
+
+Collecting pynacl>=1.0.1
+
+  Downloading PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (856 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 856.7/856.7 KB 46.0 MB/s eta 0:00:00
+
+Collecting bcrypt>=3.1.3
+
+  Downloading bcrypt-4.0.1-cp36-abi3-manylinux_2_28_x86_64.whl (593 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 593.7/593.7 KB 46.5 MB/s eta 0:00:00
+
+
+Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.9/site-packages (from requests>=2.28.1->latch) (3.0.1)
+
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.9/site-packages (from requests>=2.28.1->latch) (3.4)
+
+Collecting jinja2-time>=0.2.0
+
+  Downloading jinja2_time-0.2.0-py2.py3-none-any.whl (6.4 kB)
+
+Collecting python-slugify>=4.0.0
+
+  Downloading python_slugify-7.0.0-py2.py3-none-any.whl (9.4 kB)
+
+Collecting binaryornot>=0.4.4
+
+  Downloading binaryornot-0.4.4-py2.py3-none-any.whl (9.0 kB)
+
+Collecting Jinja2<4.0.0,>=2.7
+
+  Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 KB 19.6 MB/s eta 0:00:00
+
+
+Collecting cffi>=1.12
+
+  Downloading cffi-1.15.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (441 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 441.2/441.2 KB 35.2 MB/s eta 0:00:00
+
+
+Collecting typing-inspect>=0.4.0
+
+  Downloading typing_inspect-0.8.0-py3-none-any.whl (8.7 kB)
+
+Collecting marshmallow-enum<2.0.0,>=1.5.1
+
+  Downloading marshmallow_enum-1.5.1-py2.py3-none-any.whl (4.2 kB)
+
+Collecting marshmallow<4.0.0,>=3.3.0
+
+  Downloading marshmallow-3.19.0-py3-none-any.whl (49 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.1/49.1 KB 3.2 MB/s eta 0:00:00
+
+
+Collecting regex>=2019.4.14
+
+  Downloading regex-2022.10.31-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (769 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.0/770.0 KB 37.4 MB/s eta 0:00:00
+
+
+Collecting pyasn1-modules>=0.2.1
+
+  Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.3/155.3 KB 20.5 MB/s eta 0:00:00
+
+
+Collecting cachetools<6.0,>=2.0.0
+
+  Downloading cachetools-5.2.1-py3-none-any.whl (9.3 kB)
+
+Collecting grpcio-status!=1.45.0,>=1.43
+
+  Downloading grpcio_status-1.50.0-py3-none-any.whl (14 kB)
+
+  Downloading grpcio_status-1.49.1-py3-none-any.whl (14 kB)
+
+  Downloading grpcio_status-1.48.2-py3-none-any.whl (14 kB)
+
+Collecting pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0
+
+  Downloading pyrsistent-0.19.3-py3-none-any.whl (57 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.5/57.5 KB 3.9 MB/s eta 0:00:00
+
+Collecting attrs>=17.4.0
+
+  Downloading attrs-22.2.0-py3-none-any.whl (60 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.0/60.0 KB 11.0 MB/s eta 0:00:00
+
+
+Collecting jaraco.classes
+
+  Downloading jaraco.classes-3.2.3-py3-none-any.whl (6.0 kB)
+
+Collecting SecretStorage>=3.2
+
+  Downloading SecretStorage-3.3.3-py3-none-any.whl (15 kB)
+
+Collecting importlib-metadata>=4.11.4
+
+  Downloading importlib_metadata-6.0.0-py3-none-any.whl (21 kB)
+
+Collecting jeepney>=0.4.2
+
+  Downloading jeepney-0.8.0-py3-none-any.whl (48 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 KB 8.1 MB/s eta 0:00:00
+
+
+Collecting toml
+
+  Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+
+Collecting types-toml
+
+  Downloading types_toml-0.10.8.1-py3-none-any.whl (4.5 kB)
+
+Requirement already satisfied: pyasn1>=0.1.3 in /usr/local/lib/python3.9/site-packages (from rsa<4.8,>=3.1.2->awscli==1.25.22->latch) (0.4.8)
+
+Collecting pytz-deprecation-shim
+
+  Downloading pytz_deprecation_shim-0.1.0.post0-py2.py3-none-any.whl (15 kB)
+
+Collecting oauthlib>=3.0.0
+
+  Downloading oauthlib-3.2.2-py3-none-any.whl (151 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.7/151.7 KB 13.0 MB/s eta 0:00:00
+
+
+Collecting chardet>=3.0.2
+
+  Downloading chardet-5.1.0-py3-none-any.whl (199 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.1/199.1 KB 26.6 MB/s eta 0:00:00
+
+
+Collecting pycparser
+
+  Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 KB 10.6 MB/s eta 0:00:00
+
+
+Collecting zipp>=0.5
+
+  Downloading zipp-3.11.0-py3-none-any.whl (6.6 kB)
+
+Collecting MarkupSafe>=2.0
+
+  Downloading MarkupSafe-2.1.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+
+Collecting arrow
+
+  Downloading arrow-1.2.3-py3-none-any.whl (66 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.4/66.4 KB 9.3 MB/s eta 0:00:00
+
+
+Collecting packaging>=17.0
+
+  Downloading packaging-23.0-py3-none-any.whl (42 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.7/42.7 KB 5.1 MB/s eta 0:00:00
+
+
+Collecting text-unidecode>=1.3
+
+  Downloading text_unidecode-1.3-py2.py3-none-any.whl (78 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.2/78.2 KB 5.6 MB/s eta 0:00:00
+
+
+Collecting mypy-extensions>=0.3.0
+
+  Downloading mypy_extensions-0.4.3-py2.py3-none-any.whl (4.5 kB)
+
+Collecting more-itertools
+
+  Downloading more_itertools-9.0.0-py3-none-any.whl (52 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.8/52.8 KB 3.5 MB/s eta 0:00:00
+
+
+Collecting tzdata
+
+  Downloading tzdata-2022.7-py2.py3-none-any.whl (340 kB)
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 340.1/340.1 KB 37.1 MB/s eta 0:00:00
+
+[91mWARNING: The candidate selected for download or install is a yanked version: 'apscheduler' candidate (version 3.9.1 at https://files.pythonhosted.org/packages/e4/9f/c3937d4babe62504b874d4bf2c0d85aa69c7f59fa84cf6050f3b9dc5d83e/APScheduler-3.9.1-py2.py3-none-any.whl#sha256=ddc25a0ddd899de44d7f451f4375fb971887e65af51e41e5dcf681f59b8b2c9a (from https://pypi.org/simple/apscheduler/) (requires-python:>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4))
+Reason for being yanked: Not compatible with Python 2.7
+[0m
+Building wheels for collected packages: docker-image-py
+  Building wheel for docker-image-py (setup.py): started
+
+  Building wheel for docker-image-py (setup.py): finished with status 'done'
+
+  Created wheel for docker-image-py: filename=docker_image_py-0.1.12-py3-none-any.whl size=8836 sha256=59d5b30af053606cd6ea7e6897cd2b1da7b4e2e6e1f075d03dff5ee47c90afc5
+
+  Stored in directory: /root/.cache/pip/wheels/32/35/e8/11eecb60c93baea12949e2257f87301a4365c48291d612632b
+
+Successfully built docker-image-py
+
+Installing collected packages: wcwidth, types-toml, text-unidecode, statsd, sortedcontainers, pytimeparse, mypy-extensions, zipp, websockets, websocket-client, uvloop, tzdata, typing-extensions, tqdm, toml, regex, python-slugify, python-json-logger, pyrsistent, pyjwt, pycparser, pyasn1-modules, py, protobuf, prompt-toolkit, packaging, oauthlib, numpy, natsort, more-itertools, MarkupSafe, jeepney, grpcio, docstring-parser, diskcache, deprecated, decorator, cloudpickle, click, chardet, cachetools, bcrypt, attrs, aioconsole, typing-inspect, retry, responses, requests-oauthlib, pytz-deprecation-shim, pyarrow, protoc-gen-swagger, marshmallow, jsonschema, Jinja2, jaraco.classes, importlib-metadata, googleapis-common-protos, google-auth, docker-image-py, docker, croniter, cffi, botocore, binaryornot, arrow, tzlocal, pynacl, marshmallow-jsonschema, marshmallow-enum, lyteidl, kubernetes, jinja2-time, grpcio-status, cryptography, SecretStorage, paramiko, dataclasses-json, cookiecutter, boto3, awscli, asyncssh, apscheduler, scp, keyring, lytekit, lytekitplugins-pods, latch
+
+  Attempting uninstall: typing-extensions
+
+    Found existing installation: typing_extensions 4.4.0
+
+    Uninstalling typing_extensions-4.4.0:
+
+      Successfully uninstalled typing_extensions-4.4.0
+
+  Attempting uninstall: numpy
+
+    Found existing installation: numpy 1.24.1
+
+    Uninstalling numpy-1.24.1:
+
+      Successfully uninstalled numpy-1.24.1
+
+  Attempting uninstall: botocore
+
+    Found existing installation: botocore 1.27.69
+
+    Uninstalling botocore-1.27.69:
+
+      Successfully uninstalled botocore-1.27.69
+
+  Attempting uninstall: boto3
+
+    Found existing installation: boto3 1.24.69
+
+    Uninstalling boto3-1.24.69:
+
+      Successfully uninstalled boto3-1.24.69
+
+  Attempting uninstall: awscli
+
+    Found existing installation: awscli 1.25.70
+
+    Uninstalling awscli-1.25.70:
+
+      Successfully uninstalled awscli-1.25.70
+
+Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.2 SecretStorage-3.3.3 aioconsole-0.5.1 apscheduler-3.9.1 arrow-1.2.3 asyncssh-2.12.0 attrs-22.2.0 awscli-1.25.22 bcrypt-4.0.1 binaryornot-0.4.4 boto3-1.24.22 botocore-1.27.22 cachetools-5.2.1 cffi-1.15.1 chardet-5.1.0 click-8.1.3 cloudpickle-2.2.0 cookiecutter-2.1.1 croniter-1.3.8 cryptography-39.0.0 dataclasses-json-0.5.7 decorator-5.1.1 deprecated-1.2.13 diskcache-5.4.0 docker-5.0.3 docker-image-py-0.1.12 docstring-parser-0.15 google-auth-2.16.0 googleapis-common-protos-1.58.0 grpcio-1.51.1 grpcio-status-1.48.2 importlib-metadata-6.0.0 jaraco.classes-3.2.3 jeepney-0.8.0 jinja2-time-0.2.0 jsonschema-4.17.3 keyring-23.13.1 kubernetes-25.3.0 latch-2.10.0 lyteidl-0.2.0a0 lytekit-0.14.8 lytekitplugins-pods-0.4.0 marshmallow-3.19.0 marshmallow-enum-1.5.1 marshmallow-jsonschema-0.13.0 more-itertools-9.0.0 mypy-extensions-0.4.3 natsort-8.2.0 numpy-1.21.6 oauthlib-3.2.2 packaging-23.0 paramiko-2.12.0 prompt-toolkit-3.0.33 protobuf-3.20.3 protoc-gen-swagger-0.1.0 py-1.11.0 pyarrow-6.0.1 pyasn1-modules-0.2.8 pycparser-2.21 pyjwt-2.6.0 pynacl-1.5.0 pyrsistent-0.19.3 python-json-logger-2.0.4 python-slugify-7.0.0 pytimeparse-1.1.8 pytz-deprecation-shim-0.1.0.post0 regex-2022.10.31 requests-oauthlib-1.3.1 responses-0.22.0 retry-0.9.2 scp-0.14.4 sortedcontainers-2.4.0 statsd-3.3.0 text-unidecode-1.3 toml-0.10.2 tqdm-4.64.1 types-toml-0.10.8.1 typing-extensions-4.3.0 typing-inspect-0.8.0 tzdata-2022.7 tzlocal-4.2 uvloop-0.17.0 wcwidth-0.2.6 websocket-client-1.4.2 websockets-10.3 zipp-3.11.0
+
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[0m
+[91mWARNING: You are using pip version 22.0.4; however, version 22.3.1 is available.
+You should consider upgrading via the '/usr/local/bin/python3 -m pip install --upgrade pip' command.
+[0m
+ ---> 0f0dfb5893e7
+
+Step 5/8 : COPY wf /root/wf
+
+
+ ---> 3fb33911fe55
+
+Step 6/8 : ARG tag
+
+
+ ---> Running in 06712fa5fb11
+
+ ---> c5cb19186e1b
+
+Step 7/8 : ENV FLYTE_INTERNAL_IMAGE $tag
+
+
+ ---> Running in c3570ac47b52
+
+ ---> 0dbd8555789c
+
+Step 8/8 : WORKDIR /root
+
+
+ ---> Running in f576227d9308
+
+ ---> 97ddfbdc06a5
+
+Successfully built 97ddfbdc06a5
+
+Successfully tagged 812206152185.dkr.ecr.us-west-2.amazonaws.com/85_protein_embeddings:0.0.0-48a390
+
