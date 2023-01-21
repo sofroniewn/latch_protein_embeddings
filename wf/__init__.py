@@ -4,14 +4,14 @@ Generate Protein Embeddings based on Ensemble IDs /
 
 from latch import workflow
 from latch.resources.launch_plan import LaunchPlan
-from latch.types import LatchOutputDir
+from latch.types import LatchDir
 from .sequences import get_all_protein_sequences
 from .embeddings import extract_embeddings_from_sequences
 from .metadata import metadata
 
 
 @workflow(metadata)
-def extract_embeddings(output_dir: LatchOutputDir) -> LatchOutputDir:
+def extract_embeddings(output_dir: LatchDir) -> LatchDir:
     """Extract Protein Embeddings From Sequences
 
     markdown header
@@ -32,6 +32,6 @@ LaunchPlan(
     extract_embeddings,
     "Test Data",
     {
-        "output_dir": LatchOutputDir("latch:///sofroniewn/protein-embeddings/esmv2/test_1/"),
+        "output_dir": LatchDir("latch:///sofroniewn/protein-embeddings/esmv2/test_1/"),
     },
 )

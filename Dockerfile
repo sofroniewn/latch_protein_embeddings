@@ -1,5 +1,8 @@
 FROM 812206152185.dkr.ecr.us-west-2.amazonaws.com/latch-base:dd8f-main
 
+RUN apt-get update -y && \
+    apt-get -y install git
+    
 # Install requirements
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt

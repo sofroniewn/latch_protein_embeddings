@@ -2,7 +2,7 @@ from pathlib import Path
 import pandas as pd
 import torch
 import esm
-from latch.types import LatchOutputDir
+from latch.types import LatchDir
 from latch import small_gpu_task
 
 
@@ -14,7 +14,11 @@ MEAN = True
 BOS = False
 
 @small_gpu_task
-def extract_embeddings_from_sequences(sequences: pd.DataFrame, output_dir: LatchOutputDir) -> LatchOutputDir:
+def extract_embeddings_from_sequences(sequences: pd.DataFrame, output_dir: LatchDir) -> LatchDir:
+
+    # subset sequences    
+    sequences = sequences[:100]
+
     # Resolve local output dir
     local_output_dir = Path(output_dir).resolve()
     
@@ -74,4 +78,4 @@ def extract_embeddings_from_sequences(sequences: pd.DataFrame, output_dir: Latch
                         output_file,
                     )
     # Return directory
-    return LatchOutputDir(local_output_dir, output_dir.remote_path)
+    return LatchDir(local_output_dir, output_dir.remote_path)
