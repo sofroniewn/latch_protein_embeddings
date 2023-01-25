@@ -1,0 +1,27 @@
+Step 1/9 : FROM 812206152185.dkr.ecr.us-west-2.amazonaws.com/latch-base:dd8f-main
+
+
+ ---> be080c0dc3c9
+
+Step 2/9 : COPY requirements.txt requirements.txt
+
+
+ ---> 37a41b47fb3b
+
+Step 3/9 : RUN pip install -r requirements.txt
+
+
+ ---> Running in 3f2f481de7a7
+
+Collecting git+https://github.com/facebookresearch/esm.git (from -r requirements.txt (line 3))
+
+  Cloning https://github.com/facebookresearch/esm.git to /tmp/pip-req-build-s7p9mwrt
+
+[91m  ERROR: Error [Errno 2] No such file or directory: 'git' while executing command git version
+[0m
+[91mERROR: Cannot find command 'git' - do you have 'git' installed and in your PATH?
+[0m
+[91mWARNING: You are using pip version 22.0.4; however, version 22.3.1 is available.
+You should consider upgrading via the '/usr/local/bin/python -m pip install --upgrade pip' command.
+[0m
+The command '/bin/sh -c pip install -r requirements.txt' returned a non-zero code: 1

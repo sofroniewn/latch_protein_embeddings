@@ -78,4 +78,4 @@ def extract_embeddings_from_sequences(sequences: pd.DataFrame, output_dir: Latch
                         output_file,
                     )
     # Return directory
-    return LatchDir(local_output_dir, output_dir.remote_path)
+    return LatchDir(str(local_output_dir), output_dir.remote_path)

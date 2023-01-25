@@ -19,5 +19,5 @@ def get_all_protein_sequences() -> pd.DataFrame:
             results.append({
                 'protein_id': protein_id,
                 'protein_sequence': sequence
-            })
+            }) 
     return pd.DataFrame(results)
