@@ -1,8 +1,7 @@
 # Latch stuff
 .logs/
 .latch_report/
-.latch/
-.latch*
+.latch_report*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
