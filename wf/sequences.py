@@ -6,12 +6,16 @@ import pandas as pd
 @small_task
 def get_protein_sequence_from_protein_id(protein_id: str) -> str:
     genome = EnsemblRelease(77)
+    genome.download()
+    genome.index()
     return genome.protein_sequence(protein_id)
 
 
 @small_task
 def get_all_protein_sequences() -> pd.DataFrame:
     genome = EnsemblRelease(77)
+    genome.download()
+    genome.index()
     results = []
     for protein_id in genome.protein_ids():
         sequence = genome.protein_sequence(protein_id)
